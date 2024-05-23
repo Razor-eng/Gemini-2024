@@ -1,6 +1,5 @@
 /* eslint-disable react/no-danger-with-children */
 import { assets } from "../../Assets/assets"
-
 import { VscSend } from "react-icons/vsc";
 import { SiGooglegemini } from "react-icons/si";
 import { HiOutlineCheckBadge } from "react-icons/hi2";
@@ -48,8 +47,7 @@ const Main = () => {
                 setEffect(true);
             }, 750);
         }
-    }, [])
-
+    }, [effect])
 
     return (
         <div className="flex-1 min-h-screen pb-[15vh] relative">
