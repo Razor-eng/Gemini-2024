@@ -27,7 +27,7 @@ const Home = () => {
     }, [])
 
     return (
-        <div className="w-screen h-screen flex flex-col" style={{ animation: 'fadeIn 1.5s' }}>
+        <div className="w-screen min-h-screen flex flex-col" style={{ animation: 'fadeIn 1.5s' }}>
             <Navbar />
             <div className="md:m-[44px] px-6 md:px-0 flex-1 flex flex-col md:flex-row justify-center mb-32 md:mb-0">
                 <div className="py-[24px] md:w-[600px] flex items-center">
