@@ -63,7 +63,7 @@ const Main = () => {
                         Try Gemini Advanced
                     </button>
                     <Link to={'/'}>
-                        <img src={assets.user_icon} alt="" className="w-[40px]" />
+                        <img src='/icon.png' alt="" className="w-8" />
                     </Link>
                 </div>
             </div>
