@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+}
+
+.colorSpan {
+  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes loader {
+  0% {
+    background-position: -800px 0px;
+  }
+  100% {
+    background-position: 800px 0px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes cardMove {
+  0% {
+    bottom: -23px;
+  }
+  100% {
+    bottom: 24px;
+  }
+}
+
+@keyframes imgMove {
+  0% {
+    height: 500px;
+    width: 540px;
+  }
+  100% {
+    height: 450px;
+    width: 490px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  @keyframes cardMove {
+    100% {
+      bottom: -40px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  @keyframes imgMove {
+    0% {
+      height: 400px;
+      width: 100%;
+    }
+    100% {
+      height: 320px;
+      width: 100%;
+    }
+  }
+}
