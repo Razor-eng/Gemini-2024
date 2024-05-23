@@ -78,11 +78,11 @@ const Main = () => {
                 {!showResults
                     ?
                     <div>
-                        <div className="my-[40px] text-[56px] text-[#c4c7c5] font-[500] p-[20px]">
-                            <p><span className="colorSpan">
+                        <div className="my-[40px] text-[#c4c7c5] font-[500] p-[20px]">
+                            <p className="text-[50px] md:text-[56px]"><span className="colorSpan">
                                 Hello, Bro
                             </span></p>
-                            <p>How can I help you today?</p>
+                            <p className="text-[40px] md:text-[56px]">How can I help you today?</p>
                         </div>
                         <div className="grid gap-[5px] md:gap-[15px] md:grid-cols-4 p-[20px]" >
                             {Cards.map((card, id) => (
