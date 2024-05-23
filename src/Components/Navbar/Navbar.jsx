@@ -1,5 +1,3 @@
-import { assets } from "../../Assets/assets"
-
 const Navbar = () => {
     return (
         <div className="ml-[16px] my-[12px] py-[8px] h-[48px] flex justify-between items-center">
@@ -10,7 +8,7 @@ const Navbar = () => {
                     <p className="hover:bg-[#F5F5F5] cursor-pointer p-2 rounded-md">For business</p>
                     <p className="hover:bg-[#F5F5F5] cursor-pointer p-2 rounded-md">FAQs</p>
                 </div>
-                <img src={assets.user_icon} alt="" className="w-8" />
+                <img src='/icon.png' alt="" className="w-8" />
             </div>
         </div>
     )
