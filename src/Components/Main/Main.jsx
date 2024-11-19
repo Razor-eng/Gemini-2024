@@ -100,7 +100,13 @@ const Main = () => {
                             <p className="font-semibold text-zinc-700">{recentPrompt}</p>
                         </div>
                         <div className="flex items-start gap-[20px]">
-                            <img src={assets.gemini_icon} alt="" className="w-[40px]" />
+                            {loading ?
+                                <div className="w-[40px]">
+                                    <img src={'/icon.png'} alt="" className="w-[30px] animate-spin duration-200" />
+                                </div>
+                                :
+                                <img src={assets.gemini_icon} alt="" className="w-[40px]" />
+                            }
                             {loading ?
                                 <div className="w-full flex flex-col gap-[10px]">
                                     <hr className="rounded-[4px] border-none bg-[#f6f7f8] bg-gradient-to-r from-[#9ed7ff] via-white to-[#9ed7ff] h-[20px]" style={{ backgroundSize: '800px 50px', animation: 'loader 3s infinite linear' }} />
