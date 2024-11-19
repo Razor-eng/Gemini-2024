@@ -53,6 +53,7 @@ const ContextProvider = (props) => {
         for (let i = 0; i < newResponseArray.length; i++) {
             delayPara(i, newResponseArray[i] + " ");
         }
+        console.log(newResponseArray)
         setLoading(false);
         setInput('');
     }
